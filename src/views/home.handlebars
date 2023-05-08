@@ -1,0 +1,16 @@
+<h2>Productos</h2>
+{{#each products}}
+    <div>
+        <h3>{{this.title}}</h3>
+        <p>{{this.description}}</p>
+        <p>Precio: ${{this.price}}</p>
+        <p>Categoría: {{this.category}}</p>
+        <img src="https://sinteplastconstruccion.com.ar/assets/img/sinteplastconstruccion.com.ar/photos/w300/{{this.thumbnails}}"  alt="foto" width="100">
+        <p>Status: {{this.status}}</p>
+        <p>Código: {{this.code}}</p>
+        <p>Stock: {{this.stock}}</p>
+    </div>
+{{/each}}
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/socketClient.js"></script>
